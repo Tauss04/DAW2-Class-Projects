@@ -1,0 +1,243 @@
+
+/* -----------------------CANCELO CITA---------------- */
+.tdCita{
+    text-align: center;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.712);
+    padding: 8px;
+    width: 80px;
+    color:black;
+    font-size: 15px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border: solid 1px black;
+}
+.tdCita:hover{
+    background-color: rgb(228, 215, 215);
+    cursor:pointer;
+}
+#noHayCita{
+    margin-left: 80px;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.767);
+    border-radius: 20px;
+    width: fit-content;
+    padding: 5px 10px 5px 10px;
+}
+#caja-canceloCita{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* -------------------------COMUN--------------------- */
+
+#tablahoras{
+    background-color: rgb(255, 255, 255);
+    width: 200px;
+    height: fit-content;
+    margin: auto;
+    border-collapse: collapse;
+}
+#tablahoras #marcado{
+    height: auto;
+    background-color: rgb(111, 184, 88);
+    padding: 8px;
+    color:white;
+    font-size: 15px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border: solid 1px black;
+}
+body{
+    height:100vh;
+    background-image: url(../imagenes/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    height: 10%;
+    display: flex;
+    justify-content: center;
+}
+header h1{
+    
+    background-color:#add8e6be;
+    width: fit-content;
+    padding: 0 20px 0px 20px;
+    font-size: 40px;
+    color: rgb(14, 8, 8);
+    border-radius: 25px;
+    height: fit-content;
+}
+main{
+    height: 80%;
+}
+footer{
+    height: 10%;
+    display: flex;
+    margin-bottom: 0%;
+    position: fixed;
+}
+#form-navegacion{
+    text-align: center;
+}
+#form-atras{
+    width: fit-content;
+}
+#btn-atras{
+    width: 50px;
+    height: auto;
+    
+}
+.botones{
+    height: 50px;
+    width: fit-content;
+    padding: 0 10px 0 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    border-radius: 20px;
+    margin: 10px;
+}
+.botones:hover{
+    cursor: pointer;
+    background-color: rgb(224, 222, 222);
+    border:solid 1px grey;
+}
+/* ---------------------PIDO CITA----------------------- */
+
+.form-barbero{
+    background-color: #add8e6c9;
+    width: fit-content;
+    padding: 30px 30px 30px 30px;
+    margin: 0 auto;
+    border-radius: 30px;
+}
+.form-barbero h1{
+    margin-left: 25%;
+}
+.form-barbero label{
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.form-barbero #btnSiguiente{
+    margin-top: 10px; 
+}
+.opcion-barbero{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: 600;
+    
+}
+.btn-barbero{
+    background-color: white;
+    width: fit-content;
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+}
+.btn-barbero:hover{
+    background-color: rgb(199, 197, 197);
+    cursor: pointer;
+}
+
+#h1barbero{
+    margin-left: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.contenedor-fechahora{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: fit-content;;
+}
+#carta-fecha{
+    background-color: rgba(255, 255, 255, 0.795);
+    padding: 10px 40px 30px 40px;
+    border-radius: 20px;
+}
+#divfechahora{
+    display: flex;
+    justify-content: center;
+}
+
+#btnHoraable{
+    border: solid 1px black;
+    background-color: aliceblue;
+    width:fit-content;
+    padding-right: 4px;
+    padding-left: 4px;
+    text-align: center;
+    margin-left: 10px;
+}
+#btnHoraable:hover{
+    background-color: rgb(129, 216, 103);
+    cursor: pointer;
+}
+#btnHoradisabled{
+    border:solid 1px black;
+    background-color: aliceblue;
+    width:fit-content;
+    padding-right: 4px;
+    padding-left: 4px;
+    text-align: center;
+    margin-left: 10px;
+}
+#btnHoradisabled:hover{
+    cursor: not-allowed;
+}
+#form-muestrohoras{
+    margin-top: 10px;
+    height: fit-content;
+    width: fit-content;
+}
+#cajahoras{
+   background-color: #ccbbbb;
+   width: fit-content;
+   height: fit-content;
+   display: none;
+}
+.horasdisp{
+    text-align: center;
+    height: auto;
+    background-color: rgb(129, 216, 103);
+    padding: 8px;
+    color:white;
+    font-size: 15px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border: solid 1px black;
+}
+
+    
+#tablahoras td.horasdisp:hover {
+    background-color: rgb(111, 184, 88);
+    cursor:pointer;
+} 
+#btnPidoCita{
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    border: none;
+}
+#btnPidoCita:hover{
+    cursor: pointer;
+}
+
+.nohorasdisp{
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    padding: 8px;
+    color:rgb(0, 0, 0);
+    font-size: 15px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border: solid 1px black;
+}

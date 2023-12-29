@@ -1,0 +1,101 @@
+table{
+    background-color: rgb(255, 255, 255);
+    width: 200px;
+    height: fit-content;
+    margin: auto;
+    border-collapse: collapse;
+}
+td{
+    border: solid 1px black;
+}
+#form-dia{
+    margin-top: 20px;
+}
+.horasdisp{
+    text-align: center;
+    background-color: lightblue;
+    padding: 8px;
+    color:white;
+    font-size: 15px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border: solid 1px black;
+    height: 100px;
+    width: 200px;
+}
+.horasdisp:hover {
+    background-color: rgb(108, 158, 175);
+    cursor:pointer;
+}
+.nohorasdisp{
+    background-color: green;
+    text-align: center;
+    padding: 8px;
+    color:rgb(0, 0, 0);
+    font-size: 15px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border: solid 1px black;
+    height: 100px;
+    width: 200px;
+}
+#tablahoras #marcado{
+    height: 100px;
+    width: 200px;
+    background-color: rgb(108, 158, 175);
+    padding: 8px;
+    color:white;
+    font-size: 15px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border: solid 1px black;
+}
+#cajahoras{
+    
+    width: 1200px;
+    height: 600px;
+    padding-top: 50px;
+}
+#tablahoras{
+    width: 1000px;
+    height: 400px;   
+}
+#tdBtn{
+width: 330px;
+height: 115px;
+position: absolute;
+z-index: 1;
+}
+#btnLibre{
+    position: absolute;
+    z-index: 2;
+    width: 330px;
+    height: 115px;
+    border: none;
+}
+#btnLibre:hover{
+    background-color: rgb(182, 182, 182);
+    cursor: pointer;
+}
+#form-atras{
+    width: fit-content;
+}
+#btn-atras{
+    width: 50px;
+    height: auto;
+    
+}
+
+body{
+    height:95vh;
+}
+
+header{
+    height: 10%;
+}
+main{
+    height: 80%;
+}
+footer{
+    height: fit-content;
+    display: flex;
+    margin-bottom: 0%;
+    position: fixed;
+}
