@@ -1,9 +1,0 @@
-Programa hecho por: Iván Taus Ruiz
-
-Antes de iniciar el programa debes:
-    1.Importar la base de datos mercadillogitanillo.sql en tu servidor.
-    2.Cambiar la ruta del archivo .env a la IP de tu PC
-    3.Cambiar la ruta de /estilos/fuente.css a la IP de tu PC
-    4.Cambiar la ruta de /Home.php línea 149 por la ruta en la que alojas /htdocs en tu PC.
-
-Ahora ya puedes disfrutar de mercadilloGitanillo, gracias por usar el programa :)
