@@ -1,0 +1,147 @@
+ERROR - 2024-01-21 13:05:23 --> mysqli_sql_exception: Duplicate entry '291-Caguen tu raza payo mierda, ahora te la sustraigo, aparca...' for key 'cod_chat' in D:\xampp\htdocs\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\xampp\htdocs\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO men...', 0)
+#1 D:\xampp\htdocs\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO men...')
+#2 D:\xampp\htdocs\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO men...')
+#3 D:\xampp\htdocs\app\Models\Modelo.php(171): CodeIgniter\Database\BaseConnection->query('INSERT INTO men...')
+#4 D:\xampp\htdocs\app\Controllers\Home.php(238): App\models\Modelo->insertaMensaje('Caguen tu raza ...', '291', '2', '2', '9')
+#5 D:\xampp\htdocs\system\CodeIgniter.php(932): App\Controllers\Home->enviarMensaje()
+#6 D:\xampp\htdocs\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\xampp\htdocs\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\public\index.php(69): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-21 13:05:23 --> Duplicate entry '291-Caguen tu raza payo mierda, ahora te la sustraigo, aparca...' for key 'cod_chat'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO mensajes (contenido, cod_chat, cod_usuario) 
+                      VALUES (\'Caguen tu raza payo mierda, ahora te la sustraigo, aparcala en la calle que voy\', \'291\', \'2\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO mensajes (contenido, cod_chat, cod_usuario) 
+                      VALUES (\'Caguen tu raza payo mierda, ahora te la sustraigo, aparcala en la calle que voy\', \'291\', \'2\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO mensajes (contenido, cod_chat, cod_usuario) 
+                      VALUES (\'Caguen tu raza payo mierda, ahora te la sustraigo, aparcala en la calle que voy\', \'291\', \'2\')')
+ 4 APPPATH\Models\Modelo.php(171): CodeIgniter\Database\BaseConnection->query('INSERT INTO mensajes (contenido, cod_chat, cod_usuario) 
+                      VALUES (\'Caguen tu raza payo mierda, ahora te la sustraigo, aparcala en la calle que voy\', \'291\', \'2\')')
+ 5 APPPATH\Controllers\Home.php(238): App\models\Modelo->insertaMensaje('Caguen tu raza payo mierda, ahora te la sustraigo, aparcala en la calle que voy', '291', '2', '2', '9')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->enviarMensaje()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(69): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-21 13:05:40 --> mysqli_sql_exception: Duplicate entry '291-Caguen tu raza payo mierda, ahora te la sustraigo, aparca...' for key 'cod_chat' in D:\xampp\htdocs\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\xampp\htdocs\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO men...', 0)
+#1 D:\xampp\htdocs\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO men...')
+#2 D:\xampp\htdocs\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO men...')
+#3 D:\xampp\htdocs\app\Models\Modelo.php(171): CodeIgniter\Database\BaseConnection->query('INSERT INTO men...')
+#4 D:\xampp\htdocs\app\Controllers\Home.php(238): App\models\Modelo->insertaMensaje('Caguen tu raza ...', '291', '2', '2', '9')
+#5 D:\xampp\htdocs\system\CodeIgniter.php(932): App\Controllers\Home->enviarMensaje()
+#6 D:\xampp\htdocs\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\xampp\htdocs\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\public\index.php(69): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-21 13:05:40 --> Duplicate entry '291-Caguen tu raza payo mierda, ahora te la sustraigo, aparca...' for key 'cod_chat'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO mensajes (contenido, cod_chat, cod_usuario) 
+                      VALUES (\'Caguen tu raza payo mierda, ahora te la sustraigo, aparcala en la calle que voy\', \'291\', \'2\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO mensajes (contenido, cod_chat, cod_usuario) 
+                      VALUES (\'Caguen tu raza payo mierda, ahora te la sustraigo, aparcala en la calle que voy\', \'291\', \'2\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO mensajes (contenido, cod_chat, cod_usuario) 
+                      VALUES (\'Caguen tu raza payo mierda, ahora te la sustraigo, aparcala en la calle que voy\', \'291\', \'2\')')
+ 4 APPPATH\Models\Modelo.php(171): CodeIgniter\Database\BaseConnection->query('INSERT INTO mensajes (contenido, cod_chat, cod_usuario) 
+                      VALUES (\'Caguen tu raza payo mierda, ahora te la sustraigo, aparcala en la calle que voy\', \'291\', \'2\')')
+ 5 APPPATH\Controllers\Home.php(238): App\models\Modelo->insertaMensaje('Caguen tu raza payo mierda, ahora te la sustraigo, aparcala en la calle que voy', '291', '2', '2', '9')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->enviarMensaje()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(69): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-21 13:07:02 --> mysqli_sql_exception: Duplicate entry '291-Caguen tu raza payo mierda, ahora te la sustraigo, aparca...' for key 'cod_chat' in D:\xampp\htdocs\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\xampp\htdocs\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO men...', 0)
+#1 D:\xampp\htdocs\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO men...')
+#2 D:\xampp\htdocs\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO men...')
+#3 D:\xampp\htdocs\app\Models\Modelo.php(171): CodeIgniter\Database\BaseConnection->query('INSERT INTO men...')
+#4 D:\xampp\htdocs\app\Controllers\Home.php(238): App\models\Modelo->insertaMensaje('Caguen tu raza ...', '291', '2', '2', '9')
+#5 D:\xampp\htdocs\system\CodeIgniter.php(932): App\Controllers\Home->enviarMensaje()
+#6 D:\xampp\htdocs\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\xampp\htdocs\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\public\index.php(69): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-21 13:07:02 --> Duplicate entry '291-Caguen tu raza payo mierda, ahora te la sustraigo, aparca...' for key 'cod_chat'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO mensajes (contenido, cod_chat, cod_usuario) 
+                      VALUES (\'Caguen tu raza payo mierda, ahora te la sustraigo, aparcala en la calle que voy\', \'291\', \'2\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO mensajes (contenido, cod_chat, cod_usuario) 
+                      VALUES (\'Caguen tu raza payo mierda, ahora te la sustraigo, aparcala en la calle que voy\', \'291\', \'2\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO mensajes (contenido, cod_chat, cod_usuario) 
+                      VALUES (\'Caguen tu raza payo mierda, ahora te la sustraigo, aparcala en la calle que voy\', \'291\', \'2\')')
+ 4 APPPATH\Models\Modelo.php(171): CodeIgniter\Database\BaseConnection->query('INSERT INTO mensajes (contenido, cod_chat, cod_usuario) 
+                      VALUES (\'Caguen tu raza payo mierda, ahora te la sustraigo, aparcala en la calle que voy\', \'291\', \'2\')')
+ 5 APPPATH\Controllers\Home.php(238): App\models\Modelo->insertaMensaje('Caguen tu raza payo mierda, ahora te la sustraigo, aparcala en la calle que voy', '291', '2', '2', '9')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->enviarMensaje()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(69): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-21 13:07:03 --> mysqli_sql_exception: Duplicate entry '291-Caguen tu raza payo mierda, ahora te la sustraigo, aparca...' for key 'cod_chat' in D:\xampp\htdocs\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\xampp\htdocs\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO men...', 0)
+#1 D:\xampp\htdocs\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO men...')
+#2 D:\xampp\htdocs\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO men...')
+#3 D:\xampp\htdocs\app\Models\Modelo.php(171): CodeIgniter\Database\BaseConnection->query('INSERT INTO men...')
+#4 D:\xampp\htdocs\app\Controllers\Home.php(238): App\models\Modelo->insertaMensaje('Caguen tu raza ...', '291', '2', '2', '9')
+#5 D:\xampp\htdocs\system\CodeIgniter.php(932): App\Controllers\Home->enviarMensaje()
+#6 D:\xampp\htdocs\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\xampp\htdocs\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\public\index.php(69): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-21 13:07:03 --> Duplicate entry '291-Caguen tu raza payo mierda, ahora te la sustraigo, aparca...' for key 'cod_chat'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO mensajes (contenido, cod_chat, cod_usuario) 
+                      VALUES (\'Caguen tu raza payo mierda, ahora te la sustraigo, aparcala en la calle que voy\', \'291\', \'2\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO mensajes (contenido, cod_chat, cod_usuario) 
+                      VALUES (\'Caguen tu raza payo mierda, ahora te la sustraigo, aparcala en la calle que voy\', \'291\', \'2\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO mensajes (contenido, cod_chat, cod_usuario) 
+                      VALUES (\'Caguen tu raza payo mierda, ahora te la sustraigo, aparcala en la calle que voy\', \'291\', \'2\')')
+ 4 APPPATH\Models\Modelo.php(171): CodeIgniter\Database\BaseConnection->query('INSERT INTO mensajes (contenido, cod_chat, cod_usuario) 
+                      VALUES (\'Caguen tu raza payo mierda, ahora te la sustraigo, aparcala en la calle que voy\', \'291\', \'2\')')
+ 5 APPPATH\Controllers\Home.php(238): App\models\Modelo->insertaMensaje('Caguen tu raza payo mierda, ahora te la sustraigo, aparcala en la calle que voy', '291', '2', '2', '9')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->enviarMensaje()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(69): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-21 13:08:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 13:09:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 13:09:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 13:10:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 13:10:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-21 13:16:30 --> mysqli_sql_exception: Duplicate entry '291-Hasta luego-2' for key 'cod_chat' in D:\xampp\htdocs\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\xampp\htdocs\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO men...', 0)
+#1 D:\xampp\htdocs\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO men...')
+#2 D:\xampp\htdocs\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO men...')
+#3 D:\xampp\htdocs\app\Models\Modelo.php(171): CodeIgniter\Database\BaseConnection->query('INSERT INTO men...')
+#4 D:\xampp\htdocs\app\Controllers\Home.php(238): App\models\Modelo->insertaMensaje('Hasta luego', '291', '2', '2', '9')
+#5 D:\xampp\htdocs\system\CodeIgniter.php(932): App\Controllers\Home->enviarMensaje()
+#6 D:\xampp\htdocs\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\xampp\htdocs\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\public\index.php(69): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-21 13:16:30 --> Duplicate entry '291-Hasta luego-2' for key 'cod_chat'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO mensajes (contenido, cod_chat, cod_usuario) 
+                      VALUES (\'Hasta luego\', \'291\', \'2\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO mensajes (contenido, cod_chat, cod_usuario) 
+                      VALUES (\'Hasta luego\', \'291\', \'2\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO mensajes (contenido, cod_chat, cod_usuario) 
+                      VALUES (\'Hasta luego\', \'291\', \'2\')')
+ 4 APPPATH\Models\Modelo.php(171): CodeIgniter\Database\BaseConnection->query('INSERT INTO mensajes (contenido, cod_chat, cod_usuario) 
+                      VALUES (\'Hasta luego\', \'291\', \'2\')')
+ 5 APPPATH\Controllers\Home.php(238): App\models\Modelo->insertaMensaje('Hasta luego', '291', '2', '2', '9')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->enviarMensaje()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(69): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-21 21:39:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 21:40:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 21:41:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 20:41:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 20:41:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 20:41:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-21 20:41:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

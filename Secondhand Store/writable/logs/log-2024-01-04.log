@@ -1,0 +1,266 @@
+CRITICAL - 2024-01-04 10:50:08 --> session_start(): Ignoring session_start() because a session is already active
+in APPPATH\Views\Usuario.php on line 2.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'session_start(): Ignoring session_start() because a session is already active', 'D:\\xampp\\htdocs\\MercadilloElGitanillo\\MercadilloGitanillo\\app\\Views\\Usuario.php', 2)
+ 2 APPPATH\Views\Usuario.php(2): session_start()
+ 3 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\MercadilloElGitanillo\\MercadilloGitanillo\\app\\Views\\Usuario.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Usuario', [], true)
+ 6 APPPATH\Controllers\Home.php(64): view('Usuario')
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->cerrarSesion()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(69): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 12:51:58 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\Home.php on line 91.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\xampp\\htdocs\\MercadilloGitanillo\\app\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(69): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 12:52:09 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\Home.php on line 91.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\xampp\\htdocs\\MercadilloGitanillo\\app\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(69): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 12:55:51 --> Undefined array key "archivo"
+in APPPATH\Controllers\Home.php on line 79.
+ 1 APPPATH\Controllers\Home.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "archivo"', 'D:\\xampp\\htdocs\\MercadilloGitanillo\\app\\Controllers\\Home.php', 79)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->subirProducto()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(69): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 13:03:11 --> Undefined array key "archivo"
+in APPPATH\Controllers\Home.php on line 79.
+ 1 APPPATH\Controllers\Home.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "archivo"', 'D:\\xampp\\htdocs\\MercadilloGitanillo\\app\\Controllers\\Home.php', 79)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->subirProducto()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(69): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 13:04:09 --> Undefined global variable $_SESSION
+in APPPATH\Controllers\Home.php on line 88.
+ 1 APPPATH\Controllers\Home.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined global variable $_SESSION', 'D:\\xampp\\htdocs\\MercadilloGitanillo\\app\\Controllers\\Home.php', 88)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->subirProducto()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(69): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 13:07:04 --> session_start(): Ignoring session_start() because a session is already active
+in APPPATH\Views\Perfil.php on line 2.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'session_start(): Ignoring session_start() because a session is already active', 'D:\\xampp\\htdocs\\MercadilloGitanillo\\app\\Views\\Perfil.php', 2)
+ 2 APPPATH\Views\Perfil.php(2): session_start()
+ 3 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\MercadilloGitanillo\\app\\Views\\Perfil.php')
+ 4 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Perfil', [], true)
+ 6 APPPATH\Controllers\Home.php(95): view('Perfil', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->subirProducto()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(69): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 13:07:42 --> syntax error, unexpected token "}"
+in APPPATH\Views\Perfil.php on line 4.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Perfil', [], true)
+ 3 APPPATH\Controllers\Home.php(95): view('Perfil', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->subirProducto()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(69): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 17:17:28 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 264257536 bytes)
+in APPPATH\Models\Modelo.php on line 43.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-01-04 17:17:54 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 264257536 bytes)
+in APPPATH\Models\Modelo.php on line 43.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-01-04 17:18:05 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 264257536 bytes)
+in APPPATH\Models\Modelo.php on line 43.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-01-04 17:20:18 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::fetch_object()
+in APPPATH\Models\Modelo.php on line 44.
+ 1 APPPATH\Controllers\Home.php(71): App\models\Modelo->dameMisProductos('1')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->verPerfil()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(69): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 17:24:51 --> syntax error, unexpected token ")"
+in APPPATH\Views\Perfil.php on line 39.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Perfil.php', [], true)
+ 3 APPPATH\Controllers\Home.php(74): view('Perfil.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->verPerfil()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(69): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 17:25:51 --> Array to string conversion
+in APPPATH\Controllers\Home.php on line 72.
+ 1 APPPATH\Controllers\Home.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'D:\\xampp\\htdocs\\MercadilloGitanillo\\app\\Controllers\\Home.php', 72)
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->verPerfil()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(69): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 17:25:59 --> syntax error, unexpected token ")"
+in APPPATH\Views\Perfil.php on line 39.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Perfil.php', [], true)
+ 3 APPPATH\Controllers\Home.php(74): view('Perfil.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->verPerfil()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(69): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 17:26:40 --> syntax error, unexpected token ")"
+in APPPATH\Views\Perfil.php on line 39.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Perfil.php', [], true)
+ 3 APPPATH\Controllers\Home.php(74): view('Perfil.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->verPerfil()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(69): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 17:47:29 --> syntax error, unexpected token "}", expecting "," or ";"
+in APPPATH\Views\Perfil.php on line 56.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Perfil.php', [], true)
+ 3 APPPATH\Controllers\Home.php(74): view('Perfil.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->verPerfil()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(69): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 17:47:44 --> Undefined array key "estado"
+in APPPATH\Views\Perfil.php on line 52.
+ 1 APPPATH\Views\Perfil.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "estado"', 'D:\\xampp\\htdocs\\MercadilloGitanillo\\app\\Views\\Perfil.php', 52)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\MercadilloGitanillo\\app\\Views\\Perfil.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Perfil.php', [], true)
+ 5 APPPATH\Controllers\Home.php(74): view('Perfil.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->verPerfil()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(69): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 18:15:20 --> Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH\Controllers\Home.php on line 77.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2024-01-04 18:16:06 --> Undefined array key "activo"
+in APPPATH\Views\Perfil.php on line 45.
+ 1 APPPATH\Views\Perfil.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "activo"', 'D:\\xampp\\htdocs\\MercadilloGitanillo\\app\\Views\\Perfil.php', 45)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\MercadilloGitanillo\\app\\Views\\Perfil.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Perfil.php', [], true)
+ 5 APPPATH\Controllers\Home.php(81): view('Perfil.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->verPerfil()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(69): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 18:16:56 --> Undefined variable $estado
+in APPPATH\Views\Perfil.php on line 45.
+ 1 APPPATH\Views\Perfil.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $estado', 'D:\\xampp\\htdocs\\MercadilloGitanillo\\app\\Views\\Perfil.php', 45)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\MercadilloGitanillo\\app\\Views\\Perfil.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Perfil.php', [], true)
+ 5 APPPATH\Controllers\Home.php(81): view('Perfil.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->verPerfil()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(69): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 18:17:18 --> Undefined variable $estado
+in APPPATH\Views\Perfil.php on line 45.
+ 1 APPPATH\Views\Perfil.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $estado', 'D:\\xampp\\htdocs\\MercadilloGitanillo\\app\\Views\\Perfil.php', 45)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\MercadilloGitanillo\\app\\Views\\Perfil.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Perfil.php', [], true)
+ 5 APPPATH\Controllers\Home.php(81): view('Perfil.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->verPerfil()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(69): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 18:19:36 --> Trying to access array offset on value of type int
+in APPPATH\Views\Perfil.php on line 45.
+ 1 APPPATH\Views\Perfil.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type int', 'D:\\xampp\\htdocs\\MercadilloGitanillo\\app\\Views\\Perfil.php', 45)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\MercadilloGitanillo\\app\\Views\\Perfil.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Perfil.php', [], true)
+ 5 APPPATH\Controllers\Home.php(81): view('Perfil.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->verPerfil()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(69): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 18:26:17 --> Trying to access array offset on value of type int
+in APPPATH\Views\Perfil.php on line 45.
+ 1 APPPATH\Views\Perfil.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type int', 'D:\\xampp\\htdocs\\MercadilloGitanillo\\app\\Views\\Perfil.php', 45)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\MercadilloGitanillo\\app\\Views\\Perfil.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Perfil.php', [], true)
+ 5 APPPATH\Controllers\Home.php(81): view('Perfil.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->verPerfil()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(69): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 18:27:04 --> Trying to access array offset on value of type int
+in APPPATH\Views\Perfil.php on line 45.
+ 1 APPPATH\Views\Perfil.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type int', 'D:\\xampp\\htdocs\\MercadilloGitanillo\\app\\Views\\Perfil.php', 45)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\MercadilloGitanillo\\app\\Views\\Perfil.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Perfil.php', [], true)
+ 5 APPPATH\Controllers\Home.php(81): view('Perfil.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->verPerfil()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(69): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 18:27:11 --> Trying to access array offset on value of type int
+in APPPATH\Views\Perfil.php on line 45.
+ 1 APPPATH\Views\Perfil.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type int', 'D:\\xampp\\htdocs\\MercadilloGitanillo\\app\\Views\\Perfil.php', 45)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\MercadilloGitanillo\\app\\Views\\Perfil.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Perfil.php', [], true)
+ 5 APPPATH\Controllers\Home.php(81): view('Perfil.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->verPerfil()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(69): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 18:30:44 --> Trying to access array offset on value of type int
+in APPPATH\Views\Perfil.php on line 45.
+ 1 APPPATH\Views\Perfil.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type int', 'D:\\xampp\\htdocs\\MercadilloGitanillo\\app\\Views\\Perfil.php', 45)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\MercadilloGitanillo\\app\\Views\\Perfil.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Perfil.php', [], true)
+ 5 APPPATH\Controllers\Home.php(81): view('Perfil.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->verPerfil()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(69): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 18:30:58 --> Trying to access array offset on value of type int
+in APPPATH\Views\Perfil.php on line 45.
+ 1 APPPATH\Views\Perfil.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type int', 'D:\\xampp\\htdocs\\MercadilloGitanillo\\app\\Views\\Perfil.php', 45)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\MercadilloGitanillo\\app\\Views\\Perfil.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Perfil.php', [], true)
+ 5 APPPATH\Controllers\Home.php(81): view('Perfil.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->verPerfil()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(69): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 18:31:50 --> Trying to access array offset on value of type int
+in APPPATH\Views\Perfil.php on line 45.
+ 1 APPPATH\Views\Perfil.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type int', 'D:\\xampp\\htdocs\\MercadilloGitanillo\\app\\Views\\Perfil.php', 45)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\MercadilloGitanillo\\app\\Views\\Perfil.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Perfil.php', [], true)
+ 5 APPPATH\Controllers\Home.php(81): view('Perfil.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->verPerfil()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(69): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-04 22:03:27 --> Trying to access array offset on value of type int
+in APPPATH\Views\Perfil.php on line 45.
+ 1 APPPATH\Views\Perfil.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type int', 'D:\\xampp\\htdocs\\MercadilloGitanillo\\app\\Views\\Perfil.php', 45)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\MercadilloGitanillo\\app\\Views\\Perfil.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Perfil.php', [], true)
+ 5 APPPATH\Controllers\Home.php(81): view('Perfil.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->verPerfil()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(69): CodeIgniter\CodeIgniter->run()

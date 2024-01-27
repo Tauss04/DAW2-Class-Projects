@@ -1,0 +1,36 @@
+ERROR - 2024-01-22 11:05:53 --> mysqli_sql_exception: Duplicate entry '113' for key 'PRIMARY' in C:\xampp\htdocs\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO cha...', 0)
+#1 C:\xampp\htdocs\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO cha...')
+#2 C:\xampp\htdocs\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO cha...')
+#3 C:\xampp\htdocs\app\Models\Modelo.php(160): CodeIgniter\Database\BaseConnection->query('INSERT INTO cha...')
+#4 C:\xampp\htdocs\app\Controllers\Home.php(238): App\models\Modelo->insertaMensaje('hola', '113', '1', '3', '1')
+#5 C:\xampp\htdocs\system\CodeIgniter.php(932): App\Controllers\Home->enviarMensaje()
+#6 C:\xampp\htdocs\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\public\index.php(69): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-22 11:05:53 --> Duplicate entry '113' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO chats (cod_chat, cod_comprador, cod_vendedor, cod_articulo) 
+                      VALUES (\'113\', \'3\', \'1\', \'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO chats (cod_chat, cod_comprador, cod_vendedor, cod_articulo) 
+                      VALUES (\'113\', \'3\', \'1\', \'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO chats (cod_chat, cod_comprador, cod_vendedor, cod_articulo) 
+                      VALUES (\'113\', \'3\', \'1\', \'1\')')
+ 4 APPPATH\Models\Modelo.php(160): CodeIgniter\Database\BaseConnection->query('INSERT INTO chats (cod_chat, cod_comprador, cod_vendedor, cod_articulo) 
+                      VALUES (\'113\', \'3\', \'1\', \'1\')')
+ 5 APPPATH\Controllers\Home.php(238): App\models\Modelo->insertaMensaje('hola', '113', '1', '3', '1')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->enviarMensaje()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(69): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-22 11:25:17 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\Home.php on line 263.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\app\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH\CodeIgniter.php(890): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH\CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(69): CodeIgniter\CodeIgniter->run()

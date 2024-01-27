@@ -1,0 +1,588 @@
+INFO - 2024-01-17 10:02:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 10:26:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 09:27:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-17 09:27:17 --> mysqli_sql_exception: Unknown column 'hola' in 'field list' in D:\xampp\htdocs\MercadilloGitanillo\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\xampp\htdocs\MercadilloGitanillo\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO men...', 0)
+#1 D:\xampp\htdocs\MercadilloGitanillo\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO men...')
+#2 D:\xampp\htdocs\MercadilloGitanillo\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO men...')
+#3 D:\xampp\htdocs\MercadilloGitanillo\app\Models\Modelo.php(131): CodeIgniter\Database\BaseConnection->query('INSERT INTO men...')
+#4 D:\xampp\htdocs\MercadilloGitanillo\app\Controllers\Home.php(199): App\models\Modelo->insertaMensaje('hola', '0', '1')
+#5 D:\xampp\htdocs\MercadilloGitanillo\system\CodeIgniter.php(932): App\Controllers\Home->enviarMensaje()
+#6 D:\xampp\htdocs\MercadilloGitanillo\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\xampp\htdocs\MercadilloGitanillo\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\MercadilloGitanillo\public\index.php(69): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 09:27:18 --> Unknown column 'hola' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO mensajes (contenido,cod_usuario) VALUES (hola,1)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO mensajes (contenido,cod_usuario) VALUES (hola,1)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO mensajes (contenido,cod_usuario) VALUES (hola,1)')
+ 4 APPPATH\Models\Modelo.php(131): CodeIgniter\Database\BaseConnection->query('INSERT INTO mensajes (contenido,cod_usuario) VALUES (hola,1)')
+ 5 APPPATH\Controllers\Home.php(199): App\models\Modelo->insertaMensaje('hola', '0', '1')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->enviarMensaje()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(69): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-17 09:48:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-17 09:48:57 --> mysqli_sql_exception: Unknown column '11ivan' in 'field list' in D:\xampp\htdocs\MercadilloGitanillo\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\xampp\htdocs\MercadilloGitanillo\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO cha...', 0)
+#1 D:\xampp\htdocs\MercadilloGitanillo\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO cha...')
+#2 D:\xampp\htdocs\MercadilloGitanillo\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO cha...')
+#3 D:\xampp\htdocs\MercadilloGitanillo\app\Models\Modelo.php(129): CodeIgniter\Database\BaseConnection->query('INSERT INTO cha...')
+#4 D:\xampp\htdocs\MercadilloGitanillo\app\Controllers\Home.php(202): App\models\Modelo->insertaMensaje('hola', '11ivan', '1', 'ivan', '1')
+#5 D:\xampp\htdocs\MercadilloGitanillo\system\CodeIgniter.php(932): App\Controllers\Home->enviarMensaje()
+#6 D:\xampp\htdocs\MercadilloGitanillo\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\xampp\htdocs\MercadilloGitanillo\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\MercadilloGitanillo\public\index.php(69): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 09:48:57 --> Unknown column '11ivan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO chats VALUES(11ivan,ivan,1,1)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO chats VALUES(11ivan,ivan,1,1)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO chats VALUES(11ivan,ivan,1,1)')
+ 4 APPPATH\Models\Modelo.php(129): CodeIgniter\Database\BaseConnection->query('INSERT INTO chats VALUES(11ivan,ivan,1,1)')
+ 5 APPPATH\Controllers\Home.php(202): App\models\Modelo->insertaMensaje('hola', '11ivan', '1', 'ivan', '1')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->enviarMensaje()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(69): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-17 09:49:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 09:49:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-17 09:49:19 --> mysqli_sql_exception: Unknown column '11ivan' in 'field list' in D:\xampp\htdocs\MercadilloGitanillo\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\xampp\htdocs\MercadilloGitanillo\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO cha...', 0)
+#1 D:\xampp\htdocs\MercadilloGitanillo\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO cha...')
+#2 D:\xampp\htdocs\MercadilloGitanillo\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO cha...')
+#3 D:\xampp\htdocs\MercadilloGitanillo\app\Models\Modelo.php(129): CodeIgniter\Database\BaseConnection->query('INSERT INTO cha...')
+#4 D:\xampp\htdocs\MercadilloGitanillo\app\Controllers\Home.php(202): App\models\Modelo->insertaMensaje('hola', '11ivan', '1', 'ivan', '1')
+#5 D:\xampp\htdocs\MercadilloGitanillo\system\CodeIgniter.php(932): App\Controllers\Home->enviarMensaje()
+#6 D:\xampp\htdocs\MercadilloGitanillo\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\xampp\htdocs\MercadilloGitanillo\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\MercadilloGitanillo\public\index.php(69): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 09:49:19 --> Unknown column '11ivan' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO chats VALUES(11ivan,ivan,1,1)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO chats VALUES(11ivan,ivan,1,1)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO chats VALUES(11ivan,ivan,1,1)')
+ 4 APPPATH\Models\Modelo.php(129): CodeIgniter\Database\BaseConnection->query('INSERT INTO chats VALUES(11ivan,ivan,1,1)')
+ 5 APPPATH\Controllers\Home.php(202): App\models\Modelo->insertaMensaje('hola', '11ivan', '1', 'ivan', '1')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->enviarMensaje()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(69): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-17 09:51:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-17 09:51:56 --> mysqli_sql_exception: Unknown column 'cod_interesado' in 'field list' in D:\xampp\htdocs\MercadilloGitanillo\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\xampp\htdocs\MercadilloGitanillo\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO cha...', 0)
+#1 D:\xampp\htdocs\MercadilloGitanillo\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO cha...')
+#2 D:\xampp\htdocs\MercadilloGitanillo\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO cha...')
+#3 D:\xampp\htdocs\MercadilloGitanillo\app\Models\Modelo.php(133): CodeIgniter\Database\BaseConnection->query('INSERT INTO cha...')
+#4 D:\xampp\htdocs\MercadilloGitanillo\app\Controllers\Home.php(202): App\models\Modelo->insertaMensaje('hola', '11ivan', '1', 'ivan', '1')
+#5 D:\xampp\htdocs\MercadilloGitanillo\system\CodeIgniter.php(932): App\Controllers\Home->enviarMensaje()
+#6 D:\xampp\htdocs\MercadilloGitanillo\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\xampp\htdocs\MercadilloGitanillo\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\MercadilloGitanillo\public\index.php(69): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 09:51:56 --> Unknown column 'cod_interesado' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO chats (cod_chat, cod_interesado, cod_usuario, cod_producto) 
+                      VALUES (\'11ivan\', \'ivan\', \'1\', \'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO chats (cod_chat, cod_interesado, cod_usuario, cod_producto) 
+                      VALUES (\'11ivan\', \'ivan\', \'1\', \'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO chats (cod_chat, cod_interesado, cod_usuario, cod_producto) 
+                      VALUES (\'11ivan\', \'ivan\', \'1\', \'1\')')
+ 4 APPPATH\Models\Modelo.php(133): CodeIgniter\Database\BaseConnection->query('INSERT INTO chats (cod_chat, cod_interesado, cod_usuario, cod_producto) 
+                      VALUES (\'11ivan\', \'ivan\', \'1\', \'1\')')
+ 5 APPPATH\Controllers\Home.php(202): App\models\Modelo->insertaMensaje('hola', '11ivan', '1', 'ivan', '1')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->enviarMensaje()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(69): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-17 09:53:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-17 09:53:24 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`mercadillogitanillo`.`chats`, CONSTRAINT `chats_ibfk_2` FOREIGN KEY (`cod_comprador`) REFERENCES `usuarios` (`cod_usuario`) ON DELETE CASCADE ON UPDATE CASCADE) in D:\xampp\htdocs\MercadilloGitanillo\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\xampp\htdocs\MercadilloGitanillo\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO cha...', 0)
+#1 D:\xampp\htdocs\MercadilloGitanillo\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO cha...')
+#2 D:\xampp\htdocs\MercadilloGitanillo\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO cha...')
+#3 D:\xampp\htdocs\MercadilloGitanillo\app\Models\Modelo.php(133): CodeIgniter\Database\BaseConnection->query('INSERT INTO cha...')
+#4 D:\xampp\htdocs\MercadilloGitanillo\app\Controllers\Home.php(202): App\models\Modelo->insertaMensaje('hola', '11ivan', '1', 'ivan', '1')
+#5 D:\xampp\htdocs\MercadilloGitanillo\system\CodeIgniter.php(932): App\Controllers\Home->enviarMensaje()
+#6 D:\xampp\htdocs\MercadilloGitanillo\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\xampp\htdocs\MercadilloGitanillo\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\MercadilloGitanillo\public\index.php(69): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 09:53:24 --> Cannot add or update a child row: a foreign key constraint fails (`mercadillogitanillo`.`chats`, CONSTRAINT `chats_ibfk_2` FOREIGN KEY (`cod_comprador`) REFERENCES `usuarios` (`cod_usuario`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO chats (cod_chat, cod_comprador, cod_vendedor, cod_articulo) 
+                      VALUES (\'11ivan\', \'ivan\', \'1\', \'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO chats (cod_chat, cod_comprador, cod_vendedor, cod_articulo) 
+                      VALUES (\'11ivan\', \'ivan\', \'1\', \'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO chats (cod_chat, cod_comprador, cod_vendedor, cod_articulo) 
+                      VALUES (\'11ivan\', \'ivan\', \'1\', \'1\')')
+ 4 APPPATH\Models\Modelo.php(133): CodeIgniter\Database\BaseConnection->query('INSERT INTO chats (cod_chat, cod_comprador, cod_vendedor, cod_articulo) 
+                      VALUES (\'11ivan\', \'ivan\', \'1\', \'1\')')
+ 5 APPPATH\Controllers\Home.php(202): App\models\Modelo->insertaMensaje('hola', '11ivan', '1', 'ivan', '1')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->enviarMensaje()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(69): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-17 09:56:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 09:57:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 09:57:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 10:57:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 09:57:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 10:12:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 10:12:06 --> Undefined variable $cod_comprador
+in APPPATH\Models\Modelo.php on line 137.
+ 1 APPPATH\Models\Modelo.php(137): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cod_comprador', 'D:\\xampp\\htdocs\\MercadilloGitanillo\\app\\Models\\Modelo.php', 137)
+ 2 APPPATH\Controllers\Home.php(206): App\models\Modelo->insertaMensaje('hola', '711', '7', '1', '1')
+ 3 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->enviarMensaje()
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(69): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-17 10:12:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-17 10:12:40 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`mercadillogitanillo`.`mensajes`, CONSTRAINT `mensajes_ibfk_1` FOREIGN KEY (`cod_chat`) REFERENCES `chats` (`cod_chat`) ON DELETE CASCADE ON UPDATE CASCADE) in D:\xampp\htdocs\MercadilloGitanillo\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\xampp\htdocs\MercadilloGitanillo\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO men...', 0)
+#1 D:\xampp\htdocs\MercadilloGitanillo\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO men...')
+#2 D:\xampp\htdocs\MercadilloGitanillo\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO men...')
+#3 D:\xampp\htdocs\MercadilloGitanillo\app\Models\Modelo.php(144): CodeIgniter\Database\BaseConnection->query('INSERT INTO men...')
+#4 D:\xampp\htdocs\MercadilloGitanillo\app\Controllers\Home.php(206): App\models\Modelo->insertaMensaje('hola', '711', '7', '1', '1')
+#5 D:\xampp\htdocs\MercadilloGitanillo\system\CodeIgniter.php(932): App\Controllers\Home->enviarMensaje()
+#6 D:\xampp\htdocs\MercadilloGitanillo\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\xampp\htdocs\MercadilloGitanillo\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\MercadilloGitanillo\public\index.php(69): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 10:12:40 --> Cannot add or update a child row: a foreign key constraint fails (`mercadillogitanillo`.`mensajes`, CONSTRAINT `mensajes_ibfk_1` FOREIGN KEY (`cod_chat`) REFERENCES `chats` (`cod_chat`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO mensajes (cod_chat, contenido, cod_usuario) 
+                      VALUES (\'711\', \'hola\', \'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO mensajes (cod_chat, contenido, cod_usuario) 
+                      VALUES (\'711\', \'hola\', \'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO mensajes (cod_chat, contenido, cod_usuario) 
+                      VALUES (\'711\', \'hola\', \'1\')')
+ 4 APPPATH\Models\Modelo.php(144): CodeIgniter\Database\BaseConnection->query('INSERT INTO mensajes (cod_chat, contenido, cod_usuario) 
+                      VALUES (\'711\', \'hola\', \'1\')')
+ 5 APPPATH\Controllers\Home.php(206): App\models\Modelo->insertaMensaje('hola', '711', '7', '1', '1')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->enviarMensaje()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(69): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-17 10:13:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-17 10:13:03 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`mercadillogitanillo`.`mensajes`, CONSTRAINT `mensajes_ibfk_1` FOREIGN KEY (`cod_chat`) REFERENCES `chats` (`cod_chat`) ON DELETE CASCADE ON UPDATE CASCADE) in D:\xampp\htdocs\MercadilloGitanillo\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\xampp\htdocs\MercadilloGitanillo\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO men...', 0)
+#1 D:\xampp\htdocs\MercadilloGitanillo\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO men...')
+#2 D:\xampp\htdocs\MercadilloGitanillo\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO men...')
+#3 D:\xampp\htdocs\MercadilloGitanillo\app\Models\Modelo.php(144): CodeIgniter\Database\BaseConnection->query('INSERT INTO men...')
+#4 D:\xampp\htdocs\MercadilloGitanillo\app\Controllers\Home.php(206): App\models\Modelo->insertaMensaje('hola', '711', '7', '1', '1')
+#5 D:\xampp\htdocs\MercadilloGitanillo\system\CodeIgniter.php(932): App\Controllers\Home->enviarMensaje()
+#6 D:\xampp\htdocs\MercadilloGitanillo\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\xampp\htdocs\MercadilloGitanillo\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\MercadilloGitanillo\public\index.php(69): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 10:13:03 --> Cannot add or update a child row: a foreign key constraint fails (`mercadillogitanillo`.`mensajes`, CONSTRAINT `mensajes_ibfk_1` FOREIGN KEY (`cod_chat`) REFERENCES `chats` (`cod_chat`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO mensajes (cod_chat, contenido, cod_usuario) 
+                      VALUES (\'711\', \'hola\', \'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO mensajes (cod_chat, contenido, cod_usuario) 
+                      VALUES (\'711\', \'hola\', \'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO mensajes (cod_chat, contenido, cod_usuario) 
+                      VALUES (\'711\', \'hola\', \'1\')')
+ 4 APPPATH\Models\Modelo.php(144): CodeIgniter\Database\BaseConnection->query('INSERT INTO mensajes (cod_chat, contenido, cod_usuario) 
+                      VALUES (\'711\', \'hola\', \'1\')')
+ 5 APPPATH\Controllers\Home.php(206): App\models\Modelo->insertaMensaje('hola', '711', '7', '1', '1')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->enviarMensaje()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(69): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-17 11:13:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 10:14:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 10:14:09 --> syntax error, unexpected variable "$cod_chat", expecting "," or ";"
+in APPPATH\Views\Chat.php on line 16.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Chat.php', [], true)
+ 3 APPPATH\Controllers\Home.php(190): view('Chat.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->verChat()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(69): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-17 10:14:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 10:14:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-17 10:14:34 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`mercadillogitanillo`.`mensajes`, CONSTRAINT `mensajes_ibfk_1` FOREIGN KEY (`cod_chat`) REFERENCES `chats` (`cod_chat`) ON DELETE CASCADE ON UPDATE CASCADE) in D:\xampp\htdocs\MercadilloGitanillo\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\xampp\htdocs\MercadilloGitanillo\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO men...', 0)
+#1 D:\xampp\htdocs\MercadilloGitanillo\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO men...')
+#2 D:\xampp\htdocs\MercadilloGitanillo\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO men...')
+#3 D:\xampp\htdocs\MercadilloGitanillo\app\Models\Modelo.php(144): CodeIgniter\Database\BaseConnection->query('INSERT INTO men...')
+#4 D:\xampp\htdocs\MercadilloGitanillo\app\Controllers\Home.php(206): App\models\Modelo->insertaMensaje('Hola caracola', '711', '7', '1', '1')
+#5 D:\xampp\htdocs\MercadilloGitanillo\system\CodeIgniter.php(932): App\Controllers\Home->enviarMensaje()
+#6 D:\xampp\htdocs\MercadilloGitanillo\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\xampp\htdocs\MercadilloGitanillo\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\MercadilloGitanillo\public\index.php(69): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 10:14:34 --> Cannot add or update a child row: a foreign key constraint fails (`mercadillogitanillo`.`mensajes`, CONSTRAINT `mensajes_ibfk_1` FOREIGN KEY (`cod_chat`) REFERENCES `chats` (`cod_chat`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO mensajes (cod_chat, contenido, cod_usuario) 
+                      VALUES (\'711\', \'Hola caracola\', \'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO mensajes (cod_chat, contenido, cod_usuario) 
+                      VALUES (\'711\', \'Hola caracola\', \'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO mensajes (cod_chat, contenido, cod_usuario) 
+                      VALUES (\'711\', \'Hola caracola\', \'1\')')
+ 4 APPPATH\Models\Modelo.php(144): CodeIgniter\Database\BaseConnection->query('INSERT INTO mensajes (cod_chat, contenido, cod_usuario) 
+                      VALUES (\'711\', \'Hola caracola\', \'1\')')
+ 5 APPPATH\Controllers\Home.php(206): App\models\Modelo->insertaMensaje('Hola caracola', '711', '7', '1', '1')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->enviarMensaje()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(69): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-17 11:15:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 10:15:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 10:16:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 10:16:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:16:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 10:17:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 10:17:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 10:17:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 10:17:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:17:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 10:17:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 10:18:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:18:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 10:18:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:18:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 10:18:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:18:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 10:18:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 10:51:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 10:51:15 --> syntax error, unexpected token "foreach"
+in APPPATH\Models\Modelo.php on line 111.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\xampp\\htdocs\\MercadilloGitanillo\\app\\Models\\Modelo.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Modelo')
+ 3 APPPATH\Controllers\Home.php(98): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Modelo')
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->cerrarSesion()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(69): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-17 10:52:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:52:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 10:52:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:52:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 10:52:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:52:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 10:52:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 10:52:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 10:52:37 --> Undefined array key "cod_articulo"
+in APPPATH\Views\Chat.php on line 20.
+ 1 APPPATH\Views\Chat.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "cod_articulo"', 'D:\\xampp\\htdocs\\MercadilloGitanillo\\app\\Views\\Chat.php', 20)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\xampp\\htdocs\\MercadilloGitanillo\\app\\Views\\Chat.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Chat.php', [], true)
+ 5 APPPATH\Controllers\Home.php(189): view('Chat.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->verMisChats()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(69): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-17 10:53:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:55:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 10:55:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:55:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 10:55:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:55:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 10:55:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 10:55:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-17 10:55:55 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in D:\xampp\htdocs\MercadilloGitanillo\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\xampp\htdocs\MercadilloGitanillo\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO men...', 0)
+#1 D:\xampp\htdocs\MercadilloGitanillo\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO men...')
+#2 D:\xampp\htdocs\MercadilloGitanillo\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO men...')
+#3 D:\xampp\htdocs\MercadilloGitanillo\app\Models\Modelo.php(157): CodeIgniter\Database\BaseConnection->query('INSERT INTO men...')
+#4 D:\xampp\htdocs\MercadilloGitanillo\app\Controllers\Home.php(217): App\models\Modelo->insertaMensaje('Perroo', '712', '7', '2', '1')
+#5 D:\xampp\htdocs\MercadilloGitanillo\system\CodeIgniter.php(932): App\Controllers\Home->enviarMensaje()
+#6 D:\xampp\htdocs\MercadilloGitanillo\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\xampp\htdocs\MercadilloGitanillo\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\MercadilloGitanillo\public\index.php(69): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 10:55:55 --> Duplicate entry '0' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO mensajes (cod_chat, contenido, cod_usuario) 
+                      VALUES (\'712\', \'Perroo\', \'2\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO mensajes (cod_chat, contenido, cod_usuario) 
+                      VALUES (\'712\', \'Perroo\', \'2\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO mensajes (cod_chat, contenido, cod_usuario) 
+                      VALUES (\'712\', \'Perroo\', \'2\')')
+ 4 APPPATH\Models\Modelo.php(157): CodeIgniter\Database\BaseConnection->query('INSERT INTO mensajes (cod_chat, contenido, cod_usuario) 
+                      VALUES (\'712\', \'Perroo\', \'2\')')
+ 5 APPPATH\Controllers\Home.php(217): App\models\Modelo->insertaMensaje('Perroo', '712', '7', '2', '1')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->enviarMensaje()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(69): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-17 11:00:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-17 11:00:58 --> mysqli_sql_exception: Duplicate entry '712' for key 'PRIMARY' in D:\xampp\htdocs\MercadilloGitanillo\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\xampp\htdocs\MercadilloGitanillo\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO cha...', 0)
+#1 D:\xampp\htdocs\MercadilloGitanillo\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO cha...')
+#2 D:\xampp\htdocs\MercadilloGitanillo\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO cha...')
+#3 D:\xampp\htdocs\MercadilloGitanillo\app\Models\Modelo.php(146): CodeIgniter\Database\BaseConnection->query('INSERT INTO cha...')
+#4 D:\xampp\htdocs\MercadilloGitanillo\app\Controllers\Home.php(217): App\models\Modelo->insertaMensaje('Perroo', '712', '7', '2', '1')
+#5 D:\xampp\htdocs\MercadilloGitanillo\system\CodeIgniter.php(932): App\Controllers\Home->enviarMensaje()
+#6 D:\xampp\htdocs\MercadilloGitanillo\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\xampp\htdocs\MercadilloGitanillo\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\MercadilloGitanillo\public\index.php(69): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 11:00:58 --> Duplicate entry '712' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO chats (cod_chat, cod_comprador, cod_vendedor, cod_articulo) 
+                      VALUES (\'712\', \'2\', \'7\', \'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO chats (cod_chat, cod_comprador, cod_vendedor, cod_articulo) 
+                      VALUES (\'712\', \'2\', \'7\', \'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO chats (cod_chat, cod_comprador, cod_vendedor, cod_articulo) 
+                      VALUES (\'712\', \'2\', \'7\', \'1\')')
+ 4 APPPATH\Models\Modelo.php(146): CodeIgniter\Database\BaseConnection->query('INSERT INTO chats (cod_chat, cod_comprador, cod_vendedor, cod_articulo) 
+                      VALUES (\'712\', \'2\', \'7\', \'1\')')
+ 5 APPPATH\Controllers\Home.php(217): App\models\Modelo->insertaMensaje('Perroo', '712', '7', '2', '1')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->enviarMensaje()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(69): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-17 11:01:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-17 11:01:00 --> mysqli_sql_exception: Duplicate entry '712' for key 'PRIMARY' in D:\xampp\htdocs\MercadilloGitanillo\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\xampp\htdocs\MercadilloGitanillo\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO cha...', 0)
+#1 D:\xampp\htdocs\MercadilloGitanillo\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO cha...')
+#2 D:\xampp\htdocs\MercadilloGitanillo\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO cha...')
+#3 D:\xampp\htdocs\MercadilloGitanillo\app\Models\Modelo.php(146): CodeIgniter\Database\BaseConnection->query('INSERT INTO cha...')
+#4 D:\xampp\htdocs\MercadilloGitanillo\app\Controllers\Home.php(217): App\models\Modelo->insertaMensaje('Perroo', '712', '7', '2', '1')
+#5 D:\xampp\htdocs\MercadilloGitanillo\system\CodeIgniter.php(932): App\Controllers\Home->enviarMensaje()
+#6 D:\xampp\htdocs\MercadilloGitanillo\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\xampp\htdocs\MercadilloGitanillo\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\MercadilloGitanillo\public\index.php(69): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 11:01:00 --> Duplicate entry '712' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO chats (cod_chat, cod_comprador, cod_vendedor, cod_articulo) 
+                      VALUES (\'712\', \'2\', \'7\', \'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO chats (cod_chat, cod_comprador, cod_vendedor, cod_articulo) 
+                      VALUES (\'712\', \'2\', \'7\', \'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO chats (cod_chat, cod_comprador, cod_vendedor, cod_articulo) 
+                      VALUES (\'712\', \'2\', \'7\', \'1\')')
+ 4 APPPATH\Models\Modelo.php(146): CodeIgniter\Database\BaseConnection->query('INSERT INTO chats (cod_chat, cod_comprador, cod_vendedor, cod_articulo) 
+                      VALUES (\'712\', \'2\', \'7\', \'1\')')
+ 5 APPPATH\Controllers\Home.php(217): App\models\Modelo->insertaMensaje('Perroo', '712', '7', '2', '1')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->enviarMensaje()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(69): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-17 11:01:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-17 11:01:01 --> mysqli_sql_exception: Duplicate entry '712' for key 'PRIMARY' in D:\xampp\htdocs\MercadilloGitanillo\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\xampp\htdocs\MercadilloGitanillo\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO cha...', 0)
+#1 D:\xampp\htdocs\MercadilloGitanillo\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO cha...')
+#2 D:\xampp\htdocs\MercadilloGitanillo\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO cha...')
+#3 D:\xampp\htdocs\MercadilloGitanillo\app\Models\Modelo.php(146): CodeIgniter\Database\BaseConnection->query('INSERT INTO cha...')
+#4 D:\xampp\htdocs\MercadilloGitanillo\app\Controllers\Home.php(217): App\models\Modelo->insertaMensaje('Perroo', '712', '7', '2', '1')
+#5 D:\xampp\htdocs\MercadilloGitanillo\system\CodeIgniter.php(932): App\Controllers\Home->enviarMensaje()
+#6 D:\xampp\htdocs\MercadilloGitanillo\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\xampp\htdocs\MercadilloGitanillo\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\MercadilloGitanillo\public\index.php(69): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 11:01:01 --> Duplicate entry '712' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO chats (cod_chat, cod_comprador, cod_vendedor, cod_articulo) 
+                      VALUES (\'712\', \'2\', \'7\', \'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO chats (cod_chat, cod_comprador, cod_vendedor, cod_articulo) 
+                      VALUES (\'712\', \'2\', \'7\', \'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO chats (cod_chat, cod_comprador, cod_vendedor, cod_articulo) 
+                      VALUES (\'712\', \'2\', \'7\', \'1\')')
+ 4 APPPATH\Models\Modelo.php(146): CodeIgniter\Database\BaseConnection->query('INSERT INTO chats (cod_chat, cod_comprador, cod_vendedor, cod_articulo) 
+                      VALUES (\'712\', \'2\', \'7\', \'1\')')
+ 5 APPPATH\Controllers\Home.php(217): App\models\Modelo->insertaMensaje('Perroo', '712', '7', '2', '1')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->enviarMensaje()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(69): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-17 11:01:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-17 11:01:01 --> mysqli_sql_exception: Duplicate entry '712' for key 'PRIMARY' in D:\xampp\htdocs\MercadilloGitanillo\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\xampp\htdocs\MercadilloGitanillo\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO cha...', 0)
+#1 D:\xampp\htdocs\MercadilloGitanillo\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO cha...')
+#2 D:\xampp\htdocs\MercadilloGitanillo\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO cha...')
+#3 D:\xampp\htdocs\MercadilloGitanillo\app\Models\Modelo.php(146): CodeIgniter\Database\BaseConnection->query('INSERT INTO cha...')
+#4 D:\xampp\htdocs\MercadilloGitanillo\app\Controllers\Home.php(217): App\models\Modelo->insertaMensaje('Perroo', '712', '7', '2', '1')
+#5 D:\xampp\htdocs\MercadilloGitanillo\system\CodeIgniter.php(932): App\Controllers\Home->enviarMensaje()
+#6 D:\xampp\htdocs\MercadilloGitanillo\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\xampp\htdocs\MercadilloGitanillo\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\MercadilloGitanillo\public\index.php(69): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 11:01:01 --> Duplicate entry '712' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO chats (cod_chat, cod_comprador, cod_vendedor, cod_articulo) 
+                      VALUES (\'712\', \'2\', \'7\', \'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO chats (cod_chat, cod_comprador, cod_vendedor, cod_articulo) 
+                      VALUES (\'712\', \'2\', \'7\', \'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO chats (cod_chat, cod_comprador, cod_vendedor, cod_articulo) 
+                      VALUES (\'712\', \'2\', \'7\', \'1\')')
+ 4 APPPATH\Models\Modelo.php(146): CodeIgniter\Database\BaseConnection->query('INSERT INTO chats (cod_chat, cod_comprador, cod_vendedor, cod_articulo) 
+                      VALUES (\'712\', \'2\', \'7\', \'1\')')
+ 5 APPPATH\Controllers\Home.php(217): App\models\Modelo->insertaMensaje('Perroo', '712', '7', '2', '1')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->enviarMensaje()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(69): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-17 11:01:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-17 11:01:02 --> mysqli_sql_exception: Duplicate entry '712' for key 'PRIMARY' in D:\xampp\htdocs\MercadilloGitanillo\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\xampp\htdocs\MercadilloGitanillo\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO cha...', 0)
+#1 D:\xampp\htdocs\MercadilloGitanillo\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO cha...')
+#2 D:\xampp\htdocs\MercadilloGitanillo\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO cha...')
+#3 D:\xampp\htdocs\MercadilloGitanillo\app\Models\Modelo.php(146): CodeIgniter\Database\BaseConnection->query('INSERT INTO cha...')
+#4 D:\xampp\htdocs\MercadilloGitanillo\app\Controllers\Home.php(217): App\models\Modelo->insertaMensaje('Perroo', '712', '7', '2', '1')
+#5 D:\xampp\htdocs\MercadilloGitanillo\system\CodeIgniter.php(932): App\Controllers\Home->enviarMensaje()
+#6 D:\xampp\htdocs\MercadilloGitanillo\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\xampp\htdocs\MercadilloGitanillo\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\MercadilloGitanillo\public\index.php(69): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 11:01:02 --> Duplicate entry '712' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO chats (cod_chat, cod_comprador, cod_vendedor, cod_articulo) 
+                      VALUES (\'712\', \'2\', \'7\', \'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO chats (cod_chat, cod_comprador, cod_vendedor, cod_articulo) 
+                      VALUES (\'712\', \'2\', \'7\', \'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO chats (cod_chat, cod_comprador, cod_vendedor, cod_articulo) 
+                      VALUES (\'712\', \'2\', \'7\', \'1\')')
+ 4 APPPATH\Models\Modelo.php(146): CodeIgniter\Database\BaseConnection->query('INSERT INTO chats (cod_chat, cod_comprador, cod_vendedor, cod_articulo) 
+                      VALUES (\'712\', \'2\', \'7\', \'1\')')
+ 5 APPPATH\Controllers\Home.php(217): App\models\Modelo->insertaMensaje('Perroo', '712', '7', '2', '1')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->enviarMensaje()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(69): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-17 11:01:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-17 11:01:02 --> mysqli_sql_exception: Duplicate entry '712' for key 'PRIMARY' in D:\xampp\htdocs\MercadilloGitanillo\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\xampp\htdocs\MercadilloGitanillo\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO cha...', 0)
+#1 D:\xampp\htdocs\MercadilloGitanillo\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO cha...')
+#2 D:\xampp\htdocs\MercadilloGitanillo\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO cha...')
+#3 D:\xampp\htdocs\MercadilloGitanillo\app\Models\Modelo.php(146): CodeIgniter\Database\BaseConnection->query('INSERT INTO cha...')
+#4 D:\xampp\htdocs\MercadilloGitanillo\app\Controllers\Home.php(217): App\models\Modelo->insertaMensaje('Perroo', '712', '7', '2', '1')
+#5 D:\xampp\htdocs\MercadilloGitanillo\system\CodeIgniter.php(932): App\Controllers\Home->enviarMensaje()
+#6 D:\xampp\htdocs\MercadilloGitanillo\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\xampp\htdocs\MercadilloGitanillo\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\MercadilloGitanillo\public\index.php(69): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 11:01:02 --> Duplicate entry '712' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO chats (cod_chat, cod_comprador, cod_vendedor, cod_articulo) 
+                      VALUES (\'712\', \'2\', \'7\', \'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO chats (cod_chat, cod_comprador, cod_vendedor, cod_articulo) 
+                      VALUES (\'712\', \'2\', \'7\', \'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO chats (cod_chat, cod_comprador, cod_vendedor, cod_articulo) 
+                      VALUES (\'712\', \'2\', \'7\', \'1\')')
+ 4 APPPATH\Models\Modelo.php(146): CodeIgniter\Database\BaseConnection->query('INSERT INTO chats (cod_chat, cod_comprador, cod_vendedor, cod_articulo) 
+                      VALUES (\'712\', \'2\', \'7\', \'1\')')
+ 5 APPPATH\Controllers\Home.php(217): App\models\Modelo->insertaMensaje('Perroo', '712', '7', '2', '1')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->enviarMensaje()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(69): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-17 11:01:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-17 11:01:02 --> mysqli_sql_exception: Duplicate entry '712' for key 'PRIMARY' in D:\xampp\htdocs\MercadilloGitanillo\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\xampp\htdocs\MercadilloGitanillo\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO cha...', 0)
+#1 D:\xampp\htdocs\MercadilloGitanillo\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO cha...')
+#2 D:\xampp\htdocs\MercadilloGitanillo\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO cha...')
+#3 D:\xampp\htdocs\MercadilloGitanillo\app\Models\Modelo.php(146): CodeIgniter\Database\BaseConnection->query('INSERT INTO cha...')
+#4 D:\xampp\htdocs\MercadilloGitanillo\app\Controllers\Home.php(217): App\models\Modelo->insertaMensaje('Perroo', '712', '7', '2', '1')
+#5 D:\xampp\htdocs\MercadilloGitanillo\system\CodeIgniter.php(932): App\Controllers\Home->enviarMensaje()
+#6 D:\xampp\htdocs\MercadilloGitanillo\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 D:\xampp\htdocs\MercadilloGitanillo\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\MercadilloGitanillo\public\index.php(69): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-17 11:01:02 --> Duplicate entry '712' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO chats (cod_chat, cod_comprador, cod_vendedor, cod_articulo) 
+                      VALUES (\'712\', \'2\', \'7\', \'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO chats (cod_chat, cod_comprador, cod_vendedor, cod_articulo) 
+                      VALUES (\'712\', \'2\', \'7\', \'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO chats (cod_chat, cod_comprador, cod_vendedor, cod_articulo) 
+                      VALUES (\'712\', \'2\', \'7\', \'1\')')
+ 4 APPPATH\Models\Modelo.php(146): CodeIgniter\Database\BaseConnection->query('INSERT INTO chats (cod_chat, cod_comprador, cod_vendedor, cod_articulo) 
+                      VALUES (\'712\', \'2\', \'7\', \'1\')')
+ 5 APPPATH\Controllers\Home.php(217): App\models\Modelo->insertaMensaje('Perroo', '712', '7', '2', '1')
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->enviarMensaje()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(69): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-17 12:01:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:01:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:01:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:02:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 12:02:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:02:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:02:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:04:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 11:04:31 --> syntax error, unexpected token "echo", expecting "," or ";"
+in APPPATH\Views\Chat.php on line 24.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1176): CodeIgniter\View\View->render('Chat.php', [], true)
+ 3 APPPATH\Controllers\Home.php(189): view('Chat.php', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->verMisChats()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(69): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-17 11:04:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:04:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:04:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:04:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 12:15:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:15:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:15:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:15:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:21:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:21:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:21:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:21:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:21:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:22:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 11:22:21 --> Too few arguments to function App\models\Modelo::dameMisMensajes(), 2 passed in D:\xampp\htdocs\MercadilloGitanillo\app\Controllers\Home.php on line 232 and exactly 4 expected
+in APPPATH\Models\Modelo.php on line 120.
+ 1 APPPATH\Controllers\Home.php(232): App\models\Modelo->dameMisMensajes('1', '7')
+ 2 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->enviarMensaje()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(69): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-17 11:25:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:31:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:31:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 12:31:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:32:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:32:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:32:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:32:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:32:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:32:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:32:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:32:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:32:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:32:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-17 11:33:32 --> Cannot use isset() on the result of an expression (you can use "null !== expression" instead)
+in APPPATH\Controllers\Home.php on line 235.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2024-01-17 11:33:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 12:35:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:35:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:35:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:35:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:35:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:35:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:36:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:36:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:36:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 12:36:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:36:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 12:36:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-17 11:36:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
